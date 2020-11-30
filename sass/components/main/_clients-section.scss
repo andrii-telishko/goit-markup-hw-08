@@ -1,0 +1,30 @@
+.clients {
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+
+  .link {
+    display: flex;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $icon-fill;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    fill: $icon-fill;
+
+    transition: $animation-duration $animation-timing-function;
+  }
+
+  .link:hover,
+  .link:focus {
+    border: 1px solid $accent;
+    fill: $accent;
+  }
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}

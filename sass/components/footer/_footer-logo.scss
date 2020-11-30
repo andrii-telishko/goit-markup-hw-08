@@ -1,0 +1,15 @@
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.studio-footer {
+  color: $main-background-color;
+
+  transition: $animation-duration $animation-timing-function;
+}
+
+.logo:hover .studio-footer,
+.logo:focus .studio-footer {
+  color: $accent;
+}

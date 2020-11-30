@@ -1,0 +1,36 @@
+.portfolio-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+
+  .item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .link {
+    display: inline-block;
+    min-width: 73px;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: 0;
+
+    background-color: $second-background-color;
+    color: $text-nav-tittle;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    cursor: pointer;
+
+    transition: $animation-duration $animation-timing-function;
+
+    &:hover,
+    &:focus {
+      background-color: $accent;
+      color: $main-background-color;
+    }
+  }
+}

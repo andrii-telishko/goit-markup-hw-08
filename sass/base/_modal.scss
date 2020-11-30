@@ -1,0 +1,79 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  opacity: 1;
+
+  transition: $animation-duration $animation-timing-function;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal {
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  min-width: 528px;
+  min-height: 581px;
+  background-color: #fff;
+  display: block;
+
+  transition: $animation-duration $animation-timing-function;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 1);
+
+  transition: $animation-duration $animation-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+  .close-icon {
+    fill: currentColor;
+  }
+}
+
+.modal-tittle {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $text-nav-tittle;
+}

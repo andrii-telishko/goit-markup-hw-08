@@ -1,0 +1,128 @@
+.group-inputs {
+  margin-bottom: 20px;
+}
+
+.input-field {
+  position: relative;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $text-links;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 11px 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  &:last-child {
+    height: 120px;
+    resize: none;
+    margin-bottom: 0;
+    padding: 12px 16px;
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus {
+    outline-color: $accent;
+  }
+}
+
+.input-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  fill: #212121;
+
+  .input:focus + & {
+    fill: $accent;
+  }
+}
+
+.accept-label,
+.accept-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: $text-links;
+}
+
+.accept-link {
+  margin-left: 5px;
+  color: $accent;
+  transition: $animation-duration $animation-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $text-links;
+  }
+}
+
+.modal-form .button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 10px 55px;
+  transition: $animation-duration $animation-timing-function;
+}
+
+.accept-checkbox {
+  display: inline-flex;
+  align-items: center;
+}
+
+.checkbox {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.accept-label::before {
+  content: '';
+  display: inline-flex;
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid $text-nav-tittle;
+  border-radius: 2px;
+}
+
+.checkbox:checked + .accept-label:before {
+  background-color: $accent;
+  border-color: transparent;
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.checkbox:focus + .accept-label:before {
+  border: 2px solid $accent;
+}

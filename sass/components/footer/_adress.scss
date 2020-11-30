@@ -1,0 +1,36 @@
+.adress {
+  margin-bottom: 9px;
+
+  color: $main-background-color;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-adress > .list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-adress .link {
+  color: $footer-text-link;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  transition: $animation-duration $animation-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+
+.adress-conteiner {
+  margin-right: 70px;
+}

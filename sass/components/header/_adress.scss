@@ -1,0 +1,48 @@
+.header-adress {
+  display: flex;
+  margin-left: auto;
+
+  .item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+  }
+
+  .link {
+    color: $text-links;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition: $animation-duration $animation-timing-function;
+  }
+
+  .link:hover,
+  .link:focus {
+    color: $accent;
+  }
+
+  .icon {
+    fill: currentColor;
+  }
+
+  .link {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.icon-mail {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.icon-phone {
+  margin-right: 10px;
+}
