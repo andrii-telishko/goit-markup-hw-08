@@ -7,11 +7,17 @@ body {
   margin-right: auto;
   margin-left: auto;
   width: 1200px;
+
   padding-right: 15px;
   padding-left: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 }
 
 .list,
+.hero-tittle,
 .second-tittle,
 .third-tittle,
 .txt {

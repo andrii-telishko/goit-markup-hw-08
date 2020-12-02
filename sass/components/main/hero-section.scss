@@ -1,0 +1,55 @@
+.hero {
+  padding: 118px 60px;
+  text-align: center;
+  background-image: linear-gradient(to right, $gradient-color, $gradient-color),
+    url(../../../images/main-page/hero-mobile.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          $gradient-color,
+          $gradient-color
+        ),
+        url(../../../images/main-page/hero-mobile2x.jpg);
+    }
+  }
+  &-tittle {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: $main-background-color;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
+
+.hero-button {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
+
+  background-color: $accent;
+  color: $main-background-color;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $second-background-color;
+    color: $text-nav-tittle;
+  }
+}
