@@ -5,6 +5,8 @@
 
 .studio-footer {
   color: $main-background-color;
+
+  transition: $animation-duration $animation-timing-function;
 }
 
 .logo:hover .studio-footer,

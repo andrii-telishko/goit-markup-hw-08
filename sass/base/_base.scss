@@ -6,14 +6,10 @@ body {
 .conteiner {
   margin-right: auto;
   margin-left: auto;
-  width: 1200px;
+  width: 480px;
 
   padding-right: 15px;
   padding-left: 15px;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
 }
 
 .list,
@@ -46,8 +42,8 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .img {

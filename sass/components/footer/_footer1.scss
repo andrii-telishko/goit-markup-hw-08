@@ -1,9 +1,9 @@
 .footer {
   background-color: $background-footer-hero;
-  text-align: center;
 
   .conteiner {
-    height: 603px;
+    display: flex;
+    height: 252px;
     padding-top: 60px;
     padding-bottom: 60px;
   }

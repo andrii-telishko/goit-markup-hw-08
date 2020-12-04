@@ -2,14 +2,12 @@
   text-align: center;
 }
 
-.clients .clients-list {
+.clients-list {
   display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
 
   .link {
     display: flex;
-    width: 210px;
+    width: 170px;
     height: 90px;
     border: 1px solid $icon-fill;
     border-radius: 4px;
@@ -25,9 +23,8 @@
     border: 1px solid $accent;
     fill: $accent;
   }
+}
 
-  .clients-item {
-    margin: 15px;
-    width: calc((100% - 4 * 15px) / 2);
-  }
+.clients-item:not(:last-child) {
+  margin-right: 30px;
 }
