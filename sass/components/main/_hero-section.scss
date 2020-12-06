@@ -3,6 +3,7 @@
   text-align: center;
   background-image: linear-gradient(to right, $gradient-color, $gradient-color),
     url(../../../images/main-page/hero-mobile.jpg);
+  background-size: 100% auto;
 
   &-tittle {
     margin-top: 0;
@@ -29,6 +30,7 @@
         $gradient-color
       ),
       url(../../../images/main-page/hero-mobile2x.jpg);
+    background-size: 100% auto;
   }
 }
 

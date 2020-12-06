@@ -24,12 +24,15 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  min-width: 528px;
-  min-height: 581px;
+  max-width: 528px;
+  max-height: 581px;
   background-color: #fff;
   display: block;
 
   transition: $animation-duration $animation-timing-function;
+
+  @media screen and (max-width: 767px) {
+  }
 }
 
 .backdrop.is-hidden .modal {
