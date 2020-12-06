@@ -1,6 +1,21 @@
 .section-features {
   text-align: center;
 
+  @media screen and (min-width: 768px) {
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .item {
+      margin: 15px;
+      width: calc((100%-4 * 15px) / 2);
+    }
+  }
+
   .icon {
     width: 70px;
     height: 70px;
@@ -14,7 +29,6 @@
     height: 120px;
     background-color: $second-background-color;
     border-radius: 4px;
-    margin-bottom: 30px;
   }
 
   .feature-tittle {

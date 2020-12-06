@@ -1,46 +1,56 @@
 .header-adress {
-  display: flex;
-  margin-left: auto;
-
-  .item:not(:last-child) {
-    margin-right: 50px;
-  }
+  display: inline-block;
+  padding: 18px 0px;
 
   .item {
     display: flex;
+    justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+      justify-content: flex-start;
+    }
   }
 
-  .link {
-    color: $text-links;
+  & .item:not(:last-child) {
+    margin-bottom: 16px;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-
-    transition: $animation-duration $animation-timing-function;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 8px;
+    }
   }
+}
 
-  .link:hover,
-  .link:focus {
-    color: $accent;
-  }
+.link {
+  display: inline-flex;
+  align-items: center;
+  color: $text-links;
 
-  .icon {
-    fill: currentColor;
-  }
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 
-  .link {
-    display: inline-flex;
-    align-items: center;
-  }
+  transition: $animation-duration $animation-timing-function;
+}
+
+.link:hover,
+.link:focus {
+  color: $accent;
+}
+
+.icon {
+  fill: currentColor;
 }
 
 .icon-mail {
   width: 20px;
   margin-right: 10px;
+}
+
+.phone-item {
+  padding-left: 5px;
 }
 
 .icon-phone {
