@@ -50,100 +50,111 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     margin-left: auto;
   }
-}
 
-.header-nav {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
-    margin-right: 84px;
+    justify-content: space-between;
+    margin-left: 93px;
   }
 
-  .item {
+  .header-nav {
     @media screen and (max-width: 767px) {
-      display: inline-block;
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-
-      &:not(:last-child) {
-        margin-bottom: 40px;
-      }
+      margin-bottom: 60px;
     }
 
     @media screen and (min-width: 768px) {
-      &:not(:last-child) {
-        margin-right: 50px;
+      display: flex;
+      margin-right: 84px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin-right: 0px;
+    }
+
+    .item {
+      @media screen and (max-width: 767px) {
+        display: inline-block;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+
+        &:not(:last-child) {
+          margin-bottom: 40px;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        &:not(:last-child) {
+          margin-right: 50px;
+        }
       }
     }
-  }
 
-  .link {
-    position: relative;
-    color: $text-nav-tittle;
-    padding-bottom: 8px;
+    .link {
+      position: relative;
+      color: $text-nav-tittle;
+      padding-bottom: 8px;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
 
-    @media screen and (min-width: 768px) {
-      display: inline-block;
-      padding-bottom: 32px;
-      padding-top: 32px;
+      @media screen and (min-width: 768px) {
+        display: inline-block;
+        padding-bottom: 32px;
+        padding-top: 32px;
+      }
     }
-  }
 
-  .link:hover,
-  .link:focus {
-    color: $accent;
-  }
+    .link:hover,
+    .link:focus {
+      color: $accent;
+    }
 
-  .link.current {
-    color: $accent;
-  }
+    .link.current {
+      color: $accent;
+    }
 
-  .link.current:hover,
-  .link.current:focus {
-    color: $text-nav-tittle;
-  }
+    .link.current:hover,
+    .link.current:focus {
+      color: $text-nav-tittle;
+    }
 
-  %underline {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: '';
-    width: 100%;
-    height: 4px;
-    background-color: $accent;
-    border-radius: 2px;
-  }
+    %underline {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: '';
+      width: 100%;
+      height: 4px;
+      background-color: $accent;
+      border-radius: 2px;
+    }
 
-  .link.current::after {
-    @extend %underline;
-    opacity: 1;
-  }
+    .link.current::after {
+      @extend %underline;
+      opacity: 1;
+    }
 
-  .link.current:hover::after,
-  .link.current:focus::after {
-    background-color: $text-nav-tittle;
-  }
+    .link.current:hover::after,
+    .link.current:focus::after {
+      background-color: $text-nav-tittle;
+    }
 
-  .link::after {
-    @extend %underline;
-    opacity: 0;
-  }
+    .link::after {
+      @extend %underline;
+      opacity: 0;
+    }
 
-  .link:hover::after,
-  .link:focus::after {
-    opacity: 1;
+    .link:hover::after,
+    .link:focus::after {
+      opacity: 1;
+    }
   }
 }

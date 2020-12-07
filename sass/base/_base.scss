@@ -33,7 +33,7 @@ body {
 }
 
 .second-tittle {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   color: $text-nav-tittle;
 
@@ -41,6 +41,10 @@ body {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .list {

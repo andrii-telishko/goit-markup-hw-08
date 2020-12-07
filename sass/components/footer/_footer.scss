@@ -3,8 +3,17 @@
   text-align: center;
 
   .conteiner {
-    height: 603px;
+    max-height: 603px;
+    height: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      padding-left: 76px;
+      padding-right: 89px;
+    }
   }
 }
