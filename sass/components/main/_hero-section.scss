@@ -2,7 +2,7 @@
   padding: 118px 60px;
   text-align: center;
   background-image: linear-gradient(to right, $gradient-color, $gradient-color),
-    url(../../../images/main-page/hero-mobile.jpg);
+    url(././../images/main-page/hero-mobile.jpg);
   background-size: 480px auto;
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -13,7 +13,7 @@
         $gradient-color,
         $gradient-color
       ),
-      url(../../../images/main-page/hero-mobile@2x.jpg);
+      url(././../images/main-page/hero-mobile@2x.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 3),
@@ -24,7 +24,7 @@
         $gradient-color,
         $gradient-color
       ),
-      url(../../../images/main-page/hero-mobile@3x.jpg);
+      url(././../images/main-page/hero-mobile@3x.jpg);
   }
 
   @media screen and (min-width: 481px) {
@@ -33,7 +33,7 @@
         $gradient-color,
         $gradient-color
       ),
-      url(../../../images/main-page/hero-tablet.jpg);
+      url(././../images/main-page/hero-tablet.jpg);
     background-size: 768px auto;
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -44,7 +44,7 @@
           $gradient-color,
           $gradient-color
         ),
-        url(../../../images/main-page/hero-tablet@2x.jpg);
+        url(././../images/main-page/hero-tablet@2x.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 3),
@@ -55,7 +55,7 @@
           $gradient-color,
           $gradient-color
         ),
-        url(../../../images/main-page/hero-tablet@3x.jpg);
+        url(././../images/main-page/hero-tablet@3x.jpg);
     }
   }
 

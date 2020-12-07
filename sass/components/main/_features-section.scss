@@ -11,8 +11,8 @@
 
   @media screen and (min-width: 768px) {
     .item {
+      width: calc((100% - 2 * 30px) / 2);
       margin: 15px;
-      width: calc((100%-4 * 15px) / 2);
     }
   }
 
