@@ -27,6 +27,10 @@
       url(././../images/main-page/hero-mobile@3x.jpg);
   }
 
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0px;
+  }
+
   @media screen and (min-width: 481px) {
     background-image: linear-gradient(
         to right,
@@ -89,22 +93,22 @@
           url(././../images/main-page/hero-desktop@3x.jpg);
       }
     }
+  }
 
-    &-tittle {
-      margin-top: 0;
-      margin-bottom: 30px;
-      color: $main-background-color;
+  &-tittle {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: $main-background-color;
 
-      font-weight: 900;
-      font-size: 26px;
-      line-height: 1.62;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 
-      @media screen and (min-width: 1200px) {
-        font-size: 44px;
-        line-height: 1.36;
-      }
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
     }
   }
 

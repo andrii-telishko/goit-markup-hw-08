@@ -16,6 +16,12 @@
     }
   }
 
+  @media screen and (min-width: 1200px) {
+    .item {
+      width: calc((100% - 4 * 30px) / 4);
+    }
+  }
+
   .icon {
     width: 70px;
     height: 70px;

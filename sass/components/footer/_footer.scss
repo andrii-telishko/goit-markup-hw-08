@@ -15,5 +15,9 @@
       padding-left: 76px;
       padding-right: 89px;
     }
+
+    @media screen and (min-width: 1200px) {
+      padding: 60px 15px;
+    }
   }
 }

@@ -7,6 +7,13 @@
     margin-left: auto;
   }
 
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
+    margin-bottom: 0;
+
+    align-items: flex-start;
+  }
+
   .item {
     background-color: $bgc-footer-icon;
     border-radius: 50%;
