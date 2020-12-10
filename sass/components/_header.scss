@@ -1,6 +1,10 @@
 .header {
   @media screen and (max-width: 767px) {
     position: relative;
+
+    .conteiner {
+      height: 60px;
+    }
   }
 
   .conteiner {
@@ -77,6 +81,11 @@
       font-size: 14px;
       line-height: 1.14;
       letter-spacing: 0.02em;
+
+      @media screen and (max-width: 767px) {
+        font-size: 18px;
+        line-height: 1.17;
+      }
     }
 
     .link:hover,
