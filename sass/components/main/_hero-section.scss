@@ -69,7 +69,7 @@
           $gradient-color
         ),
         url(././../images/main-page/hero-desktop.jpg);
-      background-size: 1600px auto;
+      background-size: cover;
 
       @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
