@@ -1,6 +1,7 @@
 body {
   background-color: #ffffff;
   font-family: Roboto, sans-serif;
+  overflow-x: hidden;
 }
 
 .conteiner {
@@ -9,7 +10,6 @@ body {
   padding-right: 15px;
   padding-left: 15px;
   width: 100%;
-  overflow-x: hidden;
 }
 
 @media screen and (min-width: 480px) {
@@ -523,6 +523,13 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .mobile-conteiner .header-adress .link {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+}
+
 .mobile-conteiner .header-adress .link:hover,
 .mobile-conteiner .header-adress .link:focus {
   color: #2196f3;
@@ -735,6 +742,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-features .item:nth-child(n + 3) {
+    height: 226px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section-features .item {
     width: calc((100% - 4 * 30px) / 4);
@@ -758,7 +771,7 @@ body {
 }
 
 .section-features .feature-tittle {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: #212121;
   font-weight: 700;
   font-size: 14px;
@@ -770,7 +783,7 @@ body {
 @media screen and (min-width: 768px) {
   .section-features .feature-tittle {
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
   }
 }
 
@@ -1179,7 +1192,7 @@ body {
 }
 
 .img-tittle {
-  margin-bottom: 4px;
+  margin-bottom: 3px;
   color: #212121;
   font-weight: 700;
   font-size: 18px;

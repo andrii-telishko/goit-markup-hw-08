@@ -147,6 +147,11 @@
       text-decoration: none;
 
       transition: $animation-duration $animation-timing-function;
+
+      @media screen and (max-width: 767px) {
+        font-size: 18px;
+        line-height: 1.17;
+      }
     }
 
     .link:hover,

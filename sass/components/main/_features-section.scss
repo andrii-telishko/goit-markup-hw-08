@@ -16,6 +16,12 @@
     }
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .item:nth-child(n + 3) {
+      height: 226px;
+    }
+  }
+
   @media screen and (min-width: 1200px) {
     .item {
       width: calc((100% - 4 * 30px) / 4);
@@ -39,7 +45,7 @@
   }
 
   .feature-tittle {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: $text-nav-tittle;
 
     font-weight: 700;
@@ -50,7 +56,7 @@
 
     @media screen and (min-width: 768px) {
       text-align: left;
-      margin-bottom: 10px;
+      margin-bottom: 17px;
     }
   }
 
